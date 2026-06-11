@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "language": "en",
+  "allowCompoundWords": true,
+  "caseSensitive": false,
+  "dictionaries": [
+    "en_US",
+    "companies",
+    "html",
+    "powershell",
+    "softwareTerms",
+    "misc"
+  ],
+  "ignoreRegExpList": [
+    "HexValues"
+  ],
+  "ignoreWords": [
+    "Feil"
+  ]
+}
