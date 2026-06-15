@@ -1,0 +1,81 @@
+body {
+  font-family: "Calibri", sans-serif;
+  background-color: #cfc;
+  color: black;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  min-height: 100vh;
+  max-width: 1700px;
+  background-color: #e7ffe9;
+  margin: auto;
+  padding: 10px;
+}
+
+/* centers all images and gives them a width */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 20px;
+}
+
+/* headers */
+h1, h2, h3 {
+  text-align: center;
+}
+h1 {
+  font-size: 2.7rem;
+}
+h2 {
+  font-size: 2.1rem;
+}
+h3 {
+  font-size: 1.9rem;
+}
+
+/* sections */
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+section {
+  border: 1px solid #9a9;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: #e1f5e1;
+  flex: 1;
+  min-width: 250px;
+
+  display: flex;
+  flex-direction: column;
+}
+section img {
+  width: 100%;
+  margin-top: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    width: 100% !important;
+    min-width: 1px !important;
+  }
+}
