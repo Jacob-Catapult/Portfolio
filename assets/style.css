@@ -1,0 +1,7 @@
+:root[data-bs-theme="dark"] {
+	--bs-body-bg: #031428;
+  --bs-tertiary-bg-rgb: 15, 37, 60;
+	--bs-body-color: #e8fff2;
+	--bs-bg: var(--bs-body-bg);
+	--bs-border-color: #123246;
+}
