@@ -1,0 +1,127 @@
+/* Whole page */
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	font-family: monospace;
+}
+/* Overrides because monospace breaks everything */
+nav a {
+	font-family: var(--bs-body-font-family) !important;
+	font-size: 16px !important;
+	&.navbar-brand {
+		font-size: 20px !important;
+	}
+}
+
+
+
+body {
+	text-align: center !important;
+}
+p {
+	font-size: 18px;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/* Main containers */
+#page,
+#opening {
+	background-color: rgb(var(--bs-tertiary-bg-rgb)); /* yes, this is cursed */
+	border: 1px solid var(--bs-border-color);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	width: calc(100% - 40px);
+	margin: auto;
+}
+
+@media screen and (min-width: 560px) {
+	#page,
+	#opening {
+		width: 70%;
+		min-width: 500px;
+	}
+}
+
+/* Opening */
+#opening img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+#opening h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+#opening #username, label {
+	font-size: 18px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+/* Buttons */
+.buttons {
+	margin: 20px;
+}
+
+button {
+	font-size: 18px;
+	padding: 10px 20px;
+	margin: 10px !important;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px !important;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+#start-over {
+	background-color: #0056b3;
+}
+#start-over:hover {
+	background-color: #004c9c;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+button[disabled] {
+	background-color: #666;
+}
+button[disabled]:hover {
+	background-color: #444;
+}
+
+/* Page */
+#page {
+	display: none; /* start hidden */
+}
+
+#page img {
+	max-width: 100%;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+#page h1 {
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+#page ul {
+	width: fit-content;
+	text-align: left;
+	margin: auto;
+}
