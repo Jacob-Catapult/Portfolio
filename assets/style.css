@@ -1,7 +1,36 @@
 :root[data-bs-theme="dark"] {
+
 	--bs-body-bg: #031428;
+	--bs-tertiary-bg: #3b4750;
   --bs-tertiary-bg-rgb: 15, 37, 60;
 	--bs-body-color: #e8fff2;
 	--bs-bg: var(--bs-body-bg);
 	--bs-border-color: #123246;
+
+body {
+	zoom: 110%;
+}
+.navbar {
+	--bs-navbar-brand-font-size: 1.3em !important;
+	--bs-nav-link-font-size: 1em;
+	
+	zoom: 125%;
+}
+.navbar-nav {
+	--bs-nav-link-font-weight: 500;
+}
+.navbar-brand {
+	font-weight: 700;
+}
+
+.dropdown-item.small {
+	text-decoration: underline;
+}
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #34803e;
+}
+
+input, button {
+	border: 1px solid var(--bs-secondary-color);
+
 }
