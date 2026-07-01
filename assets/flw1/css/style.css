@@ -16,3 +16,12 @@
   background-color: var(--bs-tertiary-bg) !important;
   font-weight: 500;
 }
+
+img {
+  width: 60% !important;
+  margin: auto;
+}
+
+input[type="text"] {
+  width: 250px;
+}
